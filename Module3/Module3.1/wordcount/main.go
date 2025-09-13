@@ -1,11 +1,13 @@
 package main
 
 import (
+	"os"
 	"fmt"
 
-	"./wordcnt"
+	"github.com/ilyaytrewq/GoStepikCourse/tree/master/Module3/Module3.1/wordcount/wordcnt"
 )
 
 func main() {
-	fmt.Println(wordcnt.WordCount("Hello, world!"))
+	s := os.Args[1]
+	fmt.Println(wordcnt.WordCount(s))
 }

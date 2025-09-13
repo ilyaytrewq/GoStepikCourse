@@ -7,5 +7,8 @@ func WordCount(text string) int {
 			cnt++
 		}
 	}
+	if cnt == len(text) {
+		return 0
+	}
 	return cnt + 1
 }
